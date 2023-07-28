@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Log-In Form</title>
+    </head>
+    <body>
+        <div class="form-container">
+            <form>
+                <div id="log-in">
+                    <h1 class="log-header">Log-in</h1>
+                    <div class="log-info">
+                        <label class="sty"
+                            >Username
+                            <input
+                                id="l-username"
+                                type="text"
+                                placeholder="Enter your Email or Username"
+                                required
+                            />
+                        </label>
+                        <label class="sty"
+                            >Password
+                            <input
+                                id="l-password"
+                                type="password"
+                                placeholder="Enter your password"
+                                required
+                            />
+                        </label>
+                        <label for="show-password"
+                            ><input type="checkbox" id="show-password" />Show
+                            password</label
+                        >
+                        <button id="log-btn" type="submit">Log in</button>
+                    </div>
+                </div>
+            </form>
+            <form>
+                <div id="sign-up">
+                    <h1 class="sign-header clk">Sign-up</h1>
+                    <div class="sign-info">
+                        <label class="sty">Full Name:
+                            <input
+                                id="fullName"
+                                type="text"
+                                placeholder="Enter your Name"
+                                required
+                            />
+                        </label>
+                        <label class="sty">Email: 
+                            <input
+                                type="email"
+                                name="Email"
+                                id="email"
+                                placeholder="Enter your E-mail"
+                                required
+                            />
+                        </label>
+                        <label class="sty">Username:
+                            <input
+                                id="s-username"
+                                type="text"
+                                placeholder="Enter your Email or Username"
+                                required
+                            />
+                        </label>
+                        <label class="sty">Password: 
+                            <input
+                                id="s-password"
+                                type="password"
+                                placeholder="Enter your password"
+                                minlength="8"
+                                maxlength="20"
+                                required
+                            />
+                        </label>
+                        <label class="sty">Confirm Password:
+                            <input
+                                id="sc-password"
+                                type="password"
+                                placeholder="Enter your password"
+                                required
+                            />
+                        </label>
+                        <label for="terms-condition"
+                            ><input type="checkbox" id="terms-condition" required />check
+                            if you accept<a href="">Terms and condition</a></label
+                        >
+                        <P></P>
+                        <button id="sign-btn" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    background: no-repeat linear-gradient(
+        rgb(167, 191, 212) 0% ,
+        rgb(93, 131, 165) 10% 30%,
+        rgb(45, 84, 117) 40% 60%,
+        rgb(93, 131, 165) 70% 90%,
+        rgb(167, 191, 212) 100%
+    );
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 400px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px lightblue;
+}
+h1 {
+    text-align: center;
+}
+
+/* log-in style */
+#log-in{
+    margin-bottom: 5rem;
+    padding: 0 2rem;
+}
+.log-info {
+    display: flex;
+    flex-direction: column;
+}
+.log-info>.sty>input {
+    margin-bottom: 1rem;
+    margin-left: -0.5rem;
+    width: 100%;    
+
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(211, 233, 252);
+    background: linear-gradient(
+        to right,
+        rgb(197, 225, 250) 0%,
+        rgb(168, 213, 253) 30% 60%,
+        rgb(125, 192, 252) 100%
+    );
+}
+.log-info input::placeholder {
+    color: black;
+    opacity: 0.5;
+}
+.log-info input:focus{
+    border: 2px solid rgb(211, 233, 252);
+    outline: 0;
+}
+
+
+/* sign-up style */
+#sign-up{
+    background: linear-gradient(
+        to right,
+        rgb(197, 225, 250) 0%,
+        rgb(168, 213, 253) 30% 60%,
+        rgb(125, 192, 252) 100%
+    );
+    width: 100%;
+    border-radius: 20px;
+    /* position: absolute;
+    top:80%; */
+}
+
+.sign-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.sign-info >.sty> input {
+    width: 100%;    
+    margin-bottom: 1rem;
+    margin-left: -0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(211, 233, 252);
+    background: linear-gradient(
+        to right,
+        rgb(130, 149, 165) 0%,
+        rgb(99, 123, 145) 30% 60%,
+        rgb(55, 83, 107) 100%
+    );
+}
+
+.sign-info input::placeholder {
+    color: rgb(247, 243, 243);
+    opacity: 0.5;
+}
+.sign-info input:focus{
+    border: 2px solid rgb(144, 158, 172);
+    outline: 0;
+
+}
+
+button{   
+    padding: 0.25rem 2rem;
+    max-width: 200px;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    border: 1px solid rgb(211, 233, 252,0.1);
+    background: linear-gradient(
+        to right,
+        rgb(197, 225, 250) 0%,
+        rgb(168, 213, 253) 30% 60%,
+        rgb(125, 192, 252) 100%
+    );
+    box-shadow:0 5px rgb(153, 169, 184);
+    transition: transform 0.4s ease-in-out;
+    transition: box-shadow 0.1s ease-in;
+}
+button:active{
+    transform: translateY(5px);
+    box-shadow:0 0px rgb(153, 169, 184);
+    border:none;
+    outline: 0;
+}
+
+.clk{
+    cursor: pointer;
+    padding-top: 1rem;
+}
